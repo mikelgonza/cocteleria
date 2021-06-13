@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&family=Nunito:wght@300&family=Roboto:wght@300&family=Fredoka+One&family=Josefin+Sans&display=swap&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- Inicio menú lateral-->
+        <div class="icono-menu">
+            <div>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    
+        <div class="cont-menu active" id="menu">
+            <ul>
+                <li><img src="img/copa1.png"><a href="index.html">Home</a></li>
+                <li><img src="img/copa2.png"><a href="search.html">Búsqueda</a></li>
+                <li><img src="img/copa3.png"><a href="favorites.html">Favoritos</a></li>
+            </ul>
+        </div>
+        <!-- Fin menú lateral -->
+
+        <div class="texto-logo">
+            <div>
+                <p>La Coctelería</p>
+            </div>
+        </div>
+        <div class="state-page">
+            <p>Favoritos</p>
+        </div>
+        <div id="menu-desktop">
+            <a href="index.html">Home</a>
+            <a href="search.html">Busqueda</a>
+            <a href="favorites.html" class="selected">Favoritos</a>
+        </div>
+    </header>
+
+    <main>
+        <hr>
+        <h2>Favoritos</h2>
+        
+
+
+        <div class="allCocktailsContent"></div>
+
+        <div id="paginationContainer">
+            <button id="buttonPrev"><</button>
+            <p id="paginas"></p>
+            <button id="buttonNext">></button>
+        </div>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/favorites.js"></script>
+</body>
+
+</html>

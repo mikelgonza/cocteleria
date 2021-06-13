@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&family=Nunito:wght@300&family=Roboto:wght@300&family=Fredoka+One&family=Josefin+Sans&display=swap&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- Inicio menú lateral-->
+        <div class="icono-menu">
+            <div>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    
+        <div class="cont-menu active" id="menu">
+            <ul>
+                <li><img src="img/copa1.png"><a href="index.html">Home</a></li>
+                <li><img src="img/copa2.png"><a href="search.html">Búsqueda</a></li>
+                <li><img src="img/copa3.png"><a href="favorites.html">Favoritos</a></li>
+            </ul>
+        </div>
+        <!-- Fin menú lateral -->
+
+        <div class="texto-logo" id="top">
+            <div>
+                <p>La Coctelería</p>
+            </div>
+        </div>
+        <div class="state-page">
+            <p>Busqueda</p>
+        </div>
+        <div id="menu-desktop">
+            <a href="index.html">Home</a>
+            <a href="search.html" class="selected">Búsqueda</a>
+            <a href="favorites.html">Favoritos</a>
+        </div>
+    </header>
+
+    <main>
+        <hr>
+        <h2>Busca tu coctel</h2>
+
+        <div class="searchNameContent">
+            <input type="text" id="inputName" placeholder="Coctel">
+            <input type="submit" id="buttonName">
+        </div>
+
+        <hr>
+
+        <div class="searchSelectContent">
+            <h2>O busca por:</h2>
+
+            <div class="selects-content">
+                <div class="select-part">
+                    <p class="title-search">Ingredientes</p>
+                    <select id="selectIngredients">
+                        <option selected disabled>Selecciona ingrediente</option>
+                    </select>
+                </div>
+
+                <div class="select-part">
+                    <p class="title-search">Tipo de copa</p>
+                    <select id="selectGlasses">
+                        <option selected disabled>Selecciona copa</option>
+                    </select>
+                </div>
+
+                <div class="select-part">
+                    <p class="title-search">Categorias</p>
+                    <select id="selectCategories">
+                        <option selected disabled>Selecciona categoria</option>
+                    </select>
+                </div>
+
+                <div class="select-part">
+                    <p class="title-search">Con o sín alcohol</p>
+                    <select id="selectAlcoholic">
+                        <option selected disabled>Selecciona alcohol</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="allCocktailsContent"></div>
+        
+        <div id="paginationContainer">
+            <button id="buttonPrev"><</button>
+            <p id="paginas"></p>
+            <button id="buttonNext">></button>
+        </div>
+
+        <button id="buttonUp" onclick="location.href='#top';">^</button>
+        
+    </main>
+
+    <footer>
+
+        <div class="links">
+            <p>CONTACTO</p>
+            <p>POLÍTICA DE PRIVACIDAD</p>
+        </div>
+
+        <div class="social">
+            <img src="img/facebook-mono-min.png">
+            <img src="img/twitter-mono-min.png">
+            <img src="img/instagram-mono-min.png">
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+            <p>Copyright 2021 - All Rights Reserved</p>
+            <p>Site developed by Mikel Gonzalez</p>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="js/autocompleter.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>
